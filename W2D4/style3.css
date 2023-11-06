@@ -1,0 +1,223 @@
+/* pulizia iniziale */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* per mettere il flex dove mi serve */
+.flex{
+    display: flex;
+}
+/* per mettere inline dove serve */
+.inline{
+    display: inline;
+}
+/* per mettere i bordi solidi */
+.border{
+   border-style: solid;
+   border-width: 1px;
+}
+/* grandezza delle anteprime su medium */
+.foto{
+    width: 200px;
+    height: 134px;
+}
+/* contenier della parte inferiore sotto la navbar */
+.conteiner{
+    padding: 0px 90px;
+    width: 100%;
+    height: 100%;
+}
+/* per impostare le icone e i bottoni tondi */
+.round{
+   padding: 5px 10px;
+   border-radius: 200px; 
+}
+/* per impostare il cursore */
+.pointer{
+    cursor: pointer;
+}
+/* grandezza del logo */
+.logo img{
+    width: 20%;
+    padding-left: 90px;
+}
+/* grandezza della navbar con ombra */
+.navbar{
+    /* position: fixed; */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+/* icone sulla destra della navbar */
+.icons{
+    align-items: center;
+    padding-right: 90px;
+}
+/* per mettere un pò di spazio tra gli elementi */
+.icons i, button{
+   margin: 0px 11px;
+}
+/* per sistemare la grandezza del bottone */
+.icons button{
+    width: 150px;
+}
+/* per impostare il cercgio sull'user (mi servivano misure diverse non potevo usare la class precedente) */
+.user{
+   padding: 10px 10px;
+   border-radius: 200px;
+   border-style: solid;
+   border-width: 1px;
+}
+/* la parte con "following..." */
+.select{
+    padding-top: 40px;
+    padding-left: 20px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    width: 54%;
+    padding-bottom: 10px;
+    border-color: grey;
+}
+.following{
+    color: grey;
+}
+.you{
+    font-weight: bold;
+    margin-left: 25px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    padding-bottom: 10px;
+}
+/* parte inferiore con le news e consigli sui following */
+.box_area{
+    padding: 0px 20px;
+    justify-content: space-between;
+}
+/* parte sinistra */
+.left{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-between;
+    border-right-style: solid;
+    border-color: grey;
+    width: 950px;
+}
+/* parte destra */
+.right{
+    border-width: 1px;
+    width: 45%;
+    height: 100%;
+    flex-direction: column;
+    margin-left: 30px;
+}
+/* per impostare la singola news */
+.news{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 800px;
+    height: auto;
+    margin: 15px 0px;
+}
+/* titolo della new */
+.title{
+    width: 400px;
+    display: inline;
+    cursor: pointer;
+}
+/* descrizione della new */
+.desc{
+    width: 490px;
+    font-size: large;
+    color: grey;
+}
+/* immagine della new */
+.cover{
+    margin-left: 80px;
+    cursor: pointer;
+}
+.info{
+    width: 44%;
+    justify-content: flex-end;
+}
+/* la parte che inidica quando è stato pubblicato e quanto tempo di lettura + il salvataggio e le opzioni aggiuntive */
+.info i{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+/* parte sinistra per il collegamento a twitter (ora X) */
+.discover{
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* per mettere un pò di spazio tra le p */
+.discover p{
+    margin: 20px;
+}
+/* colore del simbolo di twitter */
+.fa-twitter{
+    font-size: xx-large;
+    color: #669eff;
+}
+/* casella con maybe leter */
+.later{
+    color: grey;
+    text-decoration: underline;
+}
+/* topics raccomandati */
+.reco{
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: grey;
+}
+.reco h4{
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.topics p{
+   padding: 5px 10px;
+   border-radius: 200px; 
+   border-style: solid;
+   border-width: 1px;
+   background-color: rgb(231, 231, 231);
+   margin: 5px 10px;
+   cursor: pointer;
+}
+/* singoli topics */
+.topics{
+    padding-left: 50px ;
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+/* chi seguire */
+.who{
+    flex-direction: column;
+    margin-top: 40px;
+}
+.who h3{
+    margin-top: 20px;
+}
+div.follow i{
+    padding: 20px;
+}
+.who div{
+    margin: 20px 0px;
+}
+.who div div{
+    display: inline;
+}
+.name{
+    margin-left: 15px;
+    margin-right: 200px;
+    bottom: 50;
+    font-size: large;
+}
+.info{
+   margin-left: 75px;
+   position: relative;
+}
